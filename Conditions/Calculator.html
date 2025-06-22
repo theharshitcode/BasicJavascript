@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const first = prompt("Enter the first number:");
+        const operator = prompt("Enter the operator (+, -, *, /):");
+        if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
+            alert("Invalid operator. Please refresh and try again.");
+        }
+        const second = prompt("Enter the second number:");
+
+        switch (operator) {
+            case '+':
+                console.log(`${first} + ${second} = ${Number(first) + Number(second)}`);
+                break;
+
+            case '-':
+                console.log(`${first} - ${second} = ${Number(first) - Number(second)}`);
+                break;
+
+            case '*':
+                console.log(`${first} * ${second} = ${Number(first) * Number(second)}`);
+                break;
+
+            case '/':
+                if (Number(second) === 0) {
+                    console.log("Error: Division by zero is not allowed.");
+                    break;
+                }
+                console.log(`${first} / ${second} = ${Number(first) / Number(second)}`);
+                break;
+
+            default:
+                console.log("Invalid operator");
+                break;
+        }
+    </script>
+</body>
+
+</html>

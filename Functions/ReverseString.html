@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ReverseString(st){
+            let i = st.length - 1;
+            let reversed = '';
+            while(0<=i){
+                reversed += st[i];
+                i--;
+         
+         console.log(`Revers string is ${reversed} `)
+           }
+        }
+        const st = prompt("Enter string : ");
+
+        ReverseString(st);
+        
+    </script>
+</body>
+</html>
